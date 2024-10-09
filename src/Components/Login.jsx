@@ -44,7 +44,7 @@ function Login() {
             <div className=' text-white z-10 relative flex items-center justify-center gap-2 top-16'>
            <img src={logo1} alt="" className='md:w-[10%] w-[5%]'/> <span className='text-xl font-medium '>Travel Saving</span>
            </div>
-                <Card className='rounded-lg shadow drop-shadow-md flex items-center flex-col p-4 w-3/4 md:w-full bg-white mt-24 z-10'>
+                <Card className='rounded-lg shadow drop-shadow-md flex items-center flex-col p-4 w-[100%] md:w-full bg-white mt-24 z-10'>
                     <div className='w-24 overflow-hidden drop-shadow-lg p-2 flex flex-col justify-center mx-auto'>
                       
                         <h1 className='mx-auto font-bold text-2xl'>Sign In</h1>
