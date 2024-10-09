@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import './Login.css'
+import './Login.css';
 import { Card, Button, TextField, FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton, Checkbox, FormControlLabel } from '@mui/material';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
@@ -36,14 +36,13 @@ function Login() {
 
   return (
     <>
-      <div
-        className="h-fit object-contain	 bg-center  ">
-        <div className="w-full max-w-md m-auto flex items-center flex-col ">
-          <Card className='rounded-lg shadow drop-shadow-md flex items-center flex-col p-2 w-full bg-white mt-24'>
+      <div className="h-fit object-contain bg-center flex flex-col justify-center items-center mx-5 md:mx-20">
+        <div className="w-full max-w-md m-auto flex items-center flex-col">
+          <Card className='rounded-lg shadow drop-shadow-md flex items-center flex-col p-4 w-full bg-white mt-24'>
             <div className='w-24 overflow-hidden drop-shadow-lg p-2 flex flex-col justify-center mx-auto'>
               <h1 className='mx-auto font-bold text-2xl'>Sign In</h1>
             </div>
-            <h5 className='font-medium'>Welcome to new experience of travel bookings</h5>
+            <h5 className='font-medium text-center text-sm md:text-base'>Welcome to a new experience of travel bookings</h5>
             <br />
             <form onSubmit={handleSubmit(onSubmit)} className='w-full md:px-5 px-2 bg-white'>
               <TextField
@@ -81,7 +80,7 @@ function Login() {
               </FormControl>
               {errors.password && <span className="text-red-500">This field is required</span>}
               <br /><br />
-              <div className='flex items-center justify-between'>
+              <div className='flex items-center justify-between w-full'>
                 <FormControlLabel
                   control={
                     <Checkbox
@@ -92,7 +91,7 @@ function Login() {
                   }
                   label="Remember Me"
                 />
-                <a href="/forgot-password" className='text-blue-500 underline'>Forgot Password?</a>
+                <a href="/forgot-password" className='text-blue-500 underline text-sm md:text-base'>Forgot Password?</a>
               </div>
               <br />
               <div className='flex justify-center cursor-pointer'>
@@ -102,16 +101,14 @@ function Login() {
               </div>
             </form>
             <br />
-            <p>Create a New Account? <a href='/signup' className='text-blue-500 underline'>Signup</a></p>
+            <p className='text-sm md:text-base'>Create a New Account? <a href='/signup' className='text-blue-500 underline'>Signup</a></p>
           </Card>
         </div>
-        
       </div>
       <div className="relative w-full mt-28">
-    <div className="bg-white opacity-20 z-0 absolute inset-0"></div>
-    {/* <div className="bg-white opacity-40 z-0 absolute inset-0"></div> */}
-    <span className="z-10 relative text-center text-sm  text-black flex justify-center font-medium ">Copyright@ 2024 Traveldaving. All Rights Reserved</span>
-</div>
+        <div className="bg-white opacity-20 z-0 absolute inset-0"></div>
+        <span className="z-10 relative text-center text-xs md:text-sm text-black flex justify-center font-medium">Copyright © 2024 Traveldaving. All Rights Reserved</span>
+      </div>
       <ToastContainer />
     </>
   );
