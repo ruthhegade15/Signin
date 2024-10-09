@@ -1,7 +1,40 @@
-body{
+body {
+    position: relative;
     background-image: url(../assets/bgimage.jpg);
-   /* opacity: 0.20;
-   z-index: 10 */
-   object-fit: fill;
-   height: fit-content;
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    margin: 0;
+    overflow: hidden; 
 }
+
+body::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+
+.container {
+    position: relative;
+    z-index: 2; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; 
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px; 
+    }
+    
+    .container {
+        padding: 10px; 
+    }
+}
+ 
