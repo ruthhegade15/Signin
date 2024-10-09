@@ -1,0 +1,7 @@
+body{
+    background-image: url(../assets/bgimage.jpg);
+   /* opacity: 0.20;
+   z-index: 10 */
+   object-fit: fill;
+   height: fit-content;
+}
