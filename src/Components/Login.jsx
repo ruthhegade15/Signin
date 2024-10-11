@@ -112,11 +112,12 @@ function Login() {
                 </Card>
             </div>
         </div>
-        <div className=" w-full mt-10 relative z-5 h-14">
-            <div className="bg-white opacity-40 absolute inset-0"></div>
-            <span className="z-10 relative text-center text-xs md:text-sm text-white flex justify-center font-medium">Copyright © 2024 Travelsaving. All Rights Reserved</span>
-        </div>
+       
         <ToastContainer />
+        <div className=" w-full mt-10 relative z-5 h-14">
+            <div className="bg-white opacity-40 absolute inset-0 w-[100%]"></div>
+            <span className="z-10 relative text-center text-xs md:text-sm text-white flex justify-center font-medium lg:pt-1 pt-4 ">Copyright © 2024 Travelsaving. All Rights Reserved</span>
+        </div>
     </>
 );
 
